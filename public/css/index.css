@@ -27,10 +27,23 @@ body{
 #Title span{
     font-family: Inter;
     font-weight: lighter;
-    transform-origin: bottom;
+}
+
+
+
+
+/* Effects */
+.fall{
+    transform-origin: bottom; 
+    transition: transform .2s ease-in;
+}
+.fall:hover{
+    transform: rotateX(64deg) translateZ(5px);
+}
+
+.jump{
     transition: all .5s cubic-bezier(.24, 5, .1, 5);
 }
-#Title span:hover{
-    /* transform: rotateX(64deg) translateZ(5px); */
+.jump:hover{
     transform: translateY(10px);
 }
