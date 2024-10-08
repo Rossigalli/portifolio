@@ -3,8 +3,8 @@ window.onload = (e) => {
 
     letters = document.querySelectorAll('#Title span')
     letters.forEach(letter => {
-        const effect = random <=4 ? 'jump' : 'fall'
-        letter.classList.add(effect)
+        const effect = random <=4 ? 'jump' : 'fall fall-hover'
+        letter.classList = effect
     });
 
 }
